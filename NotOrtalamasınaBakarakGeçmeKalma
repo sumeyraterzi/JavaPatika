@@ -1,0 +1,38 @@
+package PatikaJavaBaslangıc;
+
+import java.util.Scanner ;
+
+
+public class NotOrtalamasıHesaplayanProgram {
+	public static void main(String[] args) {
+	//Matematik, Fizik, Kimya, Türkçe, Tarih, Müzik 
+	//Aynı program içerisinde koşullu ifadeler kullanılarak, 
+	//eğer kullanıcının ortalaması 60'dan büyük ise ekrana "Sınıfı Geçti" , küçük ise "Sınıfta Kaldı" yazsın.
+	
+	Scanner okuyucu = new Scanner(System.in);
+	
+	System.out.print("Lütfen Matematik notunuzu giriniz:");
+	int mat= okuyucu.nextInt();
+	
+	System.out.print("Lütfen Fizik notunuzu giriniz:");
+	int fizik= okuyucu.nextInt();
+	
+	System.out.print("Lütfen Kimya notunuzu giriniz:");
+	int kimya= okuyucu.nextInt();
+	
+	System.out.print("Lütfen Türkçe notunuzu giriniz:");
+	int turkce= okuyucu.nextInt();
+	
+	System.out.print("Lütfen Tarih notunuzu giriniz:");
+	int tarih= okuyucu.nextInt();
+	
+	System.out.print("Lütfen Müzik notunuzu giriniz:");
+	int muzik= okuyucu.nextInt();
+	
+	int ortalama = (mat+fizik+kimya+turkce+tarih+muzik)/6;
+	System.out.println("Ortalamanız = "+ ortalama);
+	
+	
+	System.out.println(ortalama >= 60 ? "SINIFI GEÇTİ" : "SINIFTA KALDI");
+
+	}	
